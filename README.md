@@ -6,7 +6,7 @@ Backend for TukTuk project
 ```
 cd C://user/acer/downloads/(folder_name)
 ```
-### Run start the backend by the command
+### To start the backend, run these commands
 ```
 npm i
 npm start
