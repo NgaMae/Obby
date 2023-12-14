@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import driverRouter from "./routes/driverRoutes.js";
+import passengerRouter from "./routes/passengerRoutes.js"
 import mongoose from "mongoose";
 
 const app = express();
@@ -15,6 +16,7 @@ app.get("/", (request, response) => {
 });
 
 app.use("/drivers", driverRouter);
+app.use("/passengers",passengerRouter);
 
 mongoose
   .connect(
